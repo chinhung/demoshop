@@ -4,10 +4,10 @@
 A simple online shop application which includes 3 major functionality: product, order and inventory. The stock quantity of a particular product will be decreased when an order contains that product is approved. Otherwise, the order will not be able to be approved while the product is out of stock.
 
 ## Highlights
-- code coverage of unit test is above 80% 
+- code coverage is 80% above
 - protect the domain logic by acceptance test, refactor the codebase confidently
-- implement `Aspect-Oriented Programming(AOP)` with the decorator pattern
-- modular design, there is no circle dependency amount the modules
+- implement `Aspect-Oriented Programming(AOP)` with Decorator Pattern
+- modular design, no circle dependency exists amount the modules
 - encapsulate the dependencies on the 3rd-party libraries and framework
 
 ## Run tests

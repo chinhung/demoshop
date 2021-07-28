@@ -1,0 +1,7 @@
+// task `generateCucumberReports`
+cucumberReports {
+    outputDir = file('build/reports/cucumber-reports/prettyCucumberReport')
+    buildId = '0'
+    reports = files('build/reports/cucumber-reports/json/cucumber.json')
+    testTasksFinalizedByReport = false
+}

@@ -1,0 +1,30 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.0'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+	id 'jacoco'
+	id 'pmd'
+	id "com.github.spacialcircumstances.gradle-cucumber-reporting" version "0.1.22"
+}
+
+group = 'net.chinhung'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'io.github.chinhung:pointwave:1.0.0'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation("org.junit.jupiter:junit-jupiter-api")
+}
+
+apply from: 'custom-script/junit.gradle'
+apply from: 'custom-script/cucumber.gradle'
+apply from: 'custom-script/jacoco.gradle'
+apply from: 'custom-script/pmd.gradle'
+apply from: 'custom-script/pretty-cucumber-report.gradle'

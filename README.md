@@ -77,6 +77,20 @@ There are 7 modules: `CoreProduct`, `CoreOrder`, `CoreInventory`, `Product`, `Or
 
 The data layer contains 3 modules: `CoreProduct`, `CoreOrder` and `CoreInventory`; the logic layer contains 3 modules: `Product`, `Order` and `Inventory`; the presentation layer contains one module: `Endpoint`.
 
+### Aspect-Oriented Programming
+
+Aspect-Oriented Programming is implemented with Decorator Pattern. For example, one could simply decorate any `ActionService` with `decoratorWithActionValidator` to add validation functionality to a particular `Action`.
+
+### Short Units of Code
+
+Short units of code are easy to test, easy to read, and easy to maintain.
+
+![Statistics of Code Lines](https://i.imgur.com/kezLvL7.png)
+
+### Encapsulate the Dependencies on the 3rd-party Libraries and Framework
+
+The dependency on the Spring framework is encapsulated in the `net.chinhung.platform` package. The dependency on `javax.validation.Validator` is encapsulated in the `DefaultValidator` class.
+
 ### StockQuantity
 `Product`object contains `stockQuantity` field, however, the stock quantity data is stored in the `Inventory` module. It means that we have to query the stock quantity of particular product when we create any `Product` object if the type of `stockQuantity` field being `Integer`. Since not all scenarios require the stock quantity value, it would be a waste to query the data every times. An appropriate design is to abstract the stock quantity as an interface: `StockQuantity`, which is implemented by class `LazyStockQuantity` allowing us to query the stock quantity data only when we really need them. Also, a single interface `StockQuantity` helps the team to form a ubiquitous language, which is a fundamental concept in `Domain-Driven Design`.
 

@@ -19,6 +19,8 @@ Run test cases by `gradle` or `gradle wrapper`:
 ```
 Get the code coverage report at `./build/jacocoHtml/index.html` when the unit test run is finished.
 
+![code coverage report](https://i.imgur.com/jLdu9Ce.png)
+
 ### Acceptance Test
 ```
 ./gradlew cucumber
@@ -28,6 +30,7 @@ When the acceptance test run is finished, use the following command to generate 
 ```
 ./gradlew generateCucumberReports
 ```
+![cucumber report](https://i.imgur.com/A9gZ4r7.png)
 
 ## Design Concepts
 

@@ -82,15 +82,15 @@ The data layer contains 3 modules: `CoreProduct`, `CoreOrder` and `CoreInventory
 
 Aspect-Oriented Programming is implemented with Decorator Pattern. For example, one could simply decorate any `ActionService` with `decoratorWithActionValidator` to add validation functionality to a particular `Action`.
 
+### Encapsulate the Dependencies on the 3rd-party Libraries and Framework
+
+The dependency on the Spring framework is encapsulated in the `net.chinhung.platform` package. The dependency on `javax.validation.Validator` is encapsulated in the `DefaultValidator` class.
+
 ### Short Units of Code
 
 Short units of code are easy to test, easy to read, and easy to maintain.
 
 ![Statistics of Code Lines](https://i.imgur.com/kezLvL7.png)
-
-### Encapsulate the Dependencies on the 3rd-party Libraries and Framework
-
-The dependency on the Spring framework is encapsulated in the `net.chinhung.platform` package. The dependency on `javax.validation.Validator` is encapsulated in the `DefaultValidator` class.
 
 ### Abstract StockQuantity
 

@@ -29,7 +29,7 @@ When the acceptance test run is finished, use the following command to generate 
 ./gradlew generateCucumberReports
 ```
 
-## Design Highlights
+## Design Concepts
 
 ### Modular Design
 There are 7 modules: `CoreProduct`, `CoreOrder`, `CoreInventory`, `Product`, `Order`, `Inventory` and `Endpoint`. There is no circle dependency amount the modules, the dependency diagram is below:

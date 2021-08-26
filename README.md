@@ -67,6 +67,7 @@ Feature: Create order
             | 3         | iMac    | 1        |
         Then got error message "products out of stock: macbook, iMac"
 ```
+All acceptance test cases are in the `./src/test/resources/features` folder.
 
 ## Design Concepts
 

@@ -92,8 +92,13 @@ Short units of code are easy to test, easy to read, and easy to maintain.
 
 The dependency on the Spring framework is encapsulated in the `net.chinhung.platform` package. The dependency on `javax.validation.Validator` is encapsulated in the `DefaultValidator` class.
 
-### StockQuantity
-`Product`object contains `stockQuantity` field, however, the stock quantity data is stored in the `Inventory` module. It means that we have to query the stock quantity of particular product when we create any `Product` object if the type of `stockQuantity` field being `Integer`. Since not all scenarios require the stock quantity value, it would be a waste to query the data every times. An appropriate design is to abstract the stock quantity as an interface: `StockQuantity`, which is implemented by class `LazyStockQuantity` allowing us to query the stock quantity data only when we really need them. Also, a single interface `StockQuantity` helps the team to form a ubiquitous language, which is a fundamental concept in `Domain-Driven Design`.
+### Abstract StockQuantity
+
+`Product`object contains `stockQuantity` field, however, the stock quantity data is stored in the `Inventory` module. It means that we have to query the stock quantity of particular product when we create any `Product` object if the type of `stockQuantity` field being `Integer`. 
+
+Since not all scenarios require the stock quantity value, it would be a waste to query the data every times. An appropriate design is to abstract the stock quantity as an interface: `StockQuantity`, which is implemented by class `LazyStockQuantity` allowing us to query the stock quantity data only when we really need them. 
+
+Also, a single interface `StockQuantity` helps the team to form a ubiquitous language, which is a fundamental concept in `Domain-Driven Design`.
 
 ## Todo
 - refactoring

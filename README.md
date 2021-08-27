@@ -80,7 +80,7 @@ The data layer contains 3 modules: `CoreProduct`, `CoreOrder` and `CoreInventory
 
 ### Aspect-Oriented Programming
 
-Aspect-Oriented Programming is implemented with Decorator Pattern. For example, one could simply decorate any `ActionService` with `decoratorWithActionValidator` to add validation functionality to a particular `Action`.
+Aspect-Oriented Programming is implemented with Decorator Pattern. For example, one could simply decorate any `ActionService` with `decoratorWithActionValidator` to add validation functionality to a particular action.
 
 ### Encapsulate the Dependencies on the 3rd-party Libraries and Framework
 

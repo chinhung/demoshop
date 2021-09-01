@@ -9,7 +9,7 @@ A simple online shop application which includes 3 major functionality: product, 
 - implement `Aspect-Oriented Programming(AOP)` with Decorator Pattern
 - modular design, no circle dependency exists amount the modules
 - encapsulate the dependencies on the 3rd-party libraries and framework
-- above 80% of code are lower than 40 lines, and no one is higher than 80 lines
+- above 80% of code are less than 40 lines, and no one is more than 80 lines
 
 ## Run tests
 Run test cases by `gradle` or `gradle wrapper`:

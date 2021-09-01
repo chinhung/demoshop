@@ -4,6 +4,7 @@
 A simple online shop application which includes 3 major functionality: product, order and inventory. The stock quantity of a particular product will be decreased when an order contains that product is approved. Otherwise, the order will not be able to be approved while the product is out of stock.
 
 ## Highlights
+- clean codebase which is SOLID, easy to read, easy to test, and easy to maintain
 - code coverage is 80% above
 - protect the domain logic by acceptance test, refactor the codebase confidently
 - implement `Aspect-Oriented Programming(AOP)` with Decorator Pattern
@@ -89,7 +90,7 @@ The dependency on the Spring framework is encapsulated in the `net.chinhung.plat
 
 ### Short Units of Code
 
-Short units of code are easy to test, easy to read, and easy to maintain. The statistics data shows that there are above 80% of code lower than 40 lines, and no one is higher than 80 lines.
+Short units of code are easy to read, easy to test, and easy to maintain. The statistics data shows that there are above 80% of code lower than 40 lines, and no one is higher than 80 lines.
 
 ![Statistics of Code Lines](https://i.imgur.com/kezLvL7.png)
 

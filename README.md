@@ -9,6 +9,7 @@ A simple online shop application which includes 3 major functionality: product, 
 - implement `Aspect-Oriented Programming(AOP)` with Decorator Pattern
 - modular design, no circle dependency exists amount the modules
 - encapsulate the dependencies on the 3rd-party libraries and framework
+- above 80% of code are lower than 40 lines, and no one is higher than 80 lines
 
 ## Run tests
 Run test cases by `gradle` or `gradle wrapper`:
@@ -88,7 +89,7 @@ The dependency on the Spring framework is encapsulated in the `net.chinhung.plat
 
 ### Short Units of Code
 
-Short units of code are easy to test, easy to read, and easy to maintain.
+Short units of code are easy to test, easy to read, and easy to maintain. The statistics data shows that there are above 80% of code lower than 40 lines, and no one is higher than 80 lines.
 
 ![Statistics of Code Lines](https://i.imgur.com/kezLvL7.png)
 

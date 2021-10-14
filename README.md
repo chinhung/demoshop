@@ -1,6 +1,5 @@
-# DemoShop
+# Demo Shop
 
-## Overview
 A simple online shop application which includes 3 major functionality: product, order and inventory. The stock quantity of a particular product will be decreased when an order contains that product is approved. Otherwise, the order will not be able to be approved while the product is out of stock.
 
 ## Highlights

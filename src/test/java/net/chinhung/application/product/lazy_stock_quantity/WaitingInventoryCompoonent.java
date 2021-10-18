@@ -6,7 +6,6 @@ import net.chinhung.application.component.inventory.InventoryQueryResult;
 import net.chinhung.application.inventory.InventoryRecord;
 
 import java.util.List;
-import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Stream;
 
 public class WaitingInventoryCompoonent implements InventoryComponent {

@@ -13,8 +13,6 @@ public class WaitingInventoryCompoonent implements InventoryComponent {
 
     private final Stream<InventoryRecord> inventoryRecords;
 
-    private ReentrantLock lock = new ReentrantLock();
-
     public WaitingInventoryCompoonent(final Stream<InventoryRecord> inventoryRecords) {
         this.inventoryRecords = inventoryRecords;
     }

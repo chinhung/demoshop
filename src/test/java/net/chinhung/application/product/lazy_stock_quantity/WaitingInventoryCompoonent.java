@@ -6,14 +6,14 @@ import net.chinhung.application.component.inventory.InventoryQueryResult;
 import net.chinhung.application.inventory.InventoryRecord;
 
 import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Stream;
 
 public class WaitingInventoryCompoonent implements InventoryComponent {
 
-    private boolean keepWaiting = true;
     private final Stream<InventoryRecord> inventoryRecords;
 
-    public final long duration = 500;
+    private ReentrantLock lock = new ReentrantLock();
 
     public WaitingInventoryCompoonent(final Stream<InventoryRecord> inventoryRecords) {
         this.inventoryRecords = inventoryRecords;
@@ -21,18 +21,11 @@ public class WaitingInventoryCompoonent implements InventoryComponent {
 
     @Override
     public Stream<InventoryRecord> getInventoryRecords(final List<String> productIds) {
-        while (keepWaiting) {
-            try {
-                Thread.sleep(duration);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        try {
+            Thread.sleep(60000);
+        } catch (InterruptedException e) {
         }
         return inventoryRecords;
-    }
-
-    public void waitingEnd() {
-        keepWaiting = false;
     }
 
     @Override
